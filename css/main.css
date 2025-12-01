@@ -1245,3 +1245,30 @@ body {
     justify-content: center;
   }
 }
+
+
+
+
+
+
+.line {
+    width: 600px;
+    height: 2px;
+    background: #f0d9c8; /* orqa chiziq rang */
+    position: relative;
+    margin: 40px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1ca1a1; /* nuqta ramka rangi */
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -7px; 
+}
+
+.dot:nth-child(1) { left: 0%; }
+.dot:nth-child(2) { left: 50%; }
+.dot:nth-child(3) { left: 100%; transform: translateX(-100%); }
